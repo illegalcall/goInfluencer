@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("background.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.full-body-container {
+  margin-bottom: 5rem;
+}
+.right-side {
+  position: relative;
+  color: grey;
+}
+.container {
+  width: 60%;
+  /* padding: 40px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -55%);
+  text-align: center;
+  border-radius: 5px;
+}
+.container h1 {
+  font-weight: 500;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-side {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imageLogo img {
+  height: 80px;
+}
+.title {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+}
+.form-outer {
+  border: 1px solid #3498db;
+  border-radius: 8px;
+  background-color: white;
+}
+.form-text {
+  border-bottom: 1px solid #3498db;
+  /* margin-top: 2rem; */
+  padding: 1.5rem 4rem;
+}
+.full-influencer-text {
+  font-size: 1.2rem;
+}
+
+.form-class {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  margin-top: 30px;
+}
+.form-class input {
+  border: 0;
+  border-bottom: 1px solid gray;
+  margin-bottom: 2rem;
+}
+.form-class input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(6, 193, 243);
+}
+.sign-in-btn {
+  padding: 0.5rem 0;
+  background-color: rgb(6, 193, 243);
+  color: white;
+  border: none;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.email-class {
+  font-size: 0.75rem;
+  text-align: left;
+}
+.password-class {
+  font-size: 0.75rem;
+  text-align: left;
+}
+.dont-have-acc {
+  font-size: 0.75rem;
+  text-align: lcenter;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.dont-have-acc a {
+  text-decoration: none;
+  color: rgb(6, 193, 243);
+}
+.forgot-password {
+  text-decoration: none;
+  color: rgb(6, 193, 243);
+}
+.sign-in h1 {
+  font-weight: 600;
+  color: gray;
+}
+.full-influencer-text {
+  font-weight: 600;
+  /* font-size: ; */
+}
+.influencer-marketing {
+  color: rgb(6, 193, 243);
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("background.png"); /* The image used */
+    background-position: bottom;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 400px 150px; /* Resize the background image to cover the entire container */
+  }
+  .full-body-container {
+    margin-top: 4rem;
+  }
+  .container {
+    /* padding: 40px; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -55%);
+    text-align: center;
+    border-radius: 5px; */
+    width: 171%;
+    padding-left: 300px;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+  }
+  .left-side {
+    display: flex;
+    height: 50vh;
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .title {
+    width: 150%;
+  }
+  .form-text {
+    border-bottom: 1px solid #3498db;
+    /* margin-top: 2rem; */
+    padding: 1.5rem 2rem;
+  }
+}
+.clippy img {
+  clip-path: polygon(0 72%, 0% 100%, 29% 100%);
+}
